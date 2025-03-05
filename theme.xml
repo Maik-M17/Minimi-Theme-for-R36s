@@ -1,0 +1,174 @@
+<!--
+theme name:     Minimi
+Creator:        Maik Hennicke
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+    <feature supported="carousel">
+    <view name="system">
+
+    <image name="staticBackground">
+	<path>./_art/bg.png</path>
+	<origin>0 0</origin>
+	<pos>0 0</pos>
+	<size>1 1</size>
+    </image>
+	
+    <carousel name="systemcarousel">
+	<origin>0 0</origin>
+	<type>vertical</type>
+	<color>FFFFFF00</color>
+	<logoSize>0.48 0.48</logoSize>
+	<maxLogoCount>5</maxLogoCount>
+	<pos>0 0.09</pos>
+	<size>1 0.83</size>
+	<scrollSound>./audio/move.wav</scrollSound>   
+    </carousel>
+<!--
+If you want to use logos (png, svg or wep)
+-->
+    <image name="logo">
+	<path>./system/${system.theme}.svg</path>
+    </image>
+
+    <text name="logoText">
+	<fontPath>./_art/BPreplayBold-unhinted.otf</fontPath>
+	<fontSize>0.055</fontSize>
+	<forceUppercase>true</forceUppercase>
+	<lineSpacing>0.7</lineSpacing>
+	<alignment>center</alignment>
+	<color>FFFFFF</color>
+    </text>
+    <text name="systemInfo">
+	<text> </text>
+	<pos>1 1</pos>
+	<backgroundColor>000000</backgroundColor>
+	<fontPath>./_art/BPreplayBold-unhinted.otf</fontPath>
+	<fontSize>0.00</fontSize>
+	<zIndex>5</zIndex>	     
+    </text> 
+    </view>
+    </feature>
+
+    <view name="system,detailed,video,basic">	
+        <helpsystem name="help">
+	<fontSize>0.000000</fontSize>
+        <fontPath>/_art/BPreplayBold-unhinted.otf</fontPath>
+	<pos>1 1</pos>
+	<fontSize>0.00</fontSize>
+	<alignment>center</alignment>
+        </helpsystem>
+    </view>  
+   
+    <view name="basic">
+    <text name="description" extra="true">
+	<pos>0.615 0.685</pos>
+	<size>0.347 0.183</size>
+	<alignment>center</alignment>
+	<color>00ffffff</color>
+	<fontSize>0.025</fontSize>
+	<text> </text>
+	<fontPath>./_art/BPreplayBold-unhinted.otf</fontPath>
+    </text>
+    </view>
+  
+    <view name="basic, detailed, video">
+    <image name="background" extra="true">
+	<size>1 1</size>
+	<pos>0 0</pos>
+	<origin>0 0</origin>
+	<path>./_art/gamelist.png</path>
+	<zIndex>0</zIndex>
+	<color>ffffff</color>
+    </image>
+<!--
+If you want to use logos in gamelist
+-->
+    <textlist name="gamelist">
+    <image name="logo">
+	<path>./system/${system.theme}.png</path>
+    </image>
+         <selectorColor>FFFFFF</selectorColor>
+         <selectedColor>000000</selectedColor>
+         <primaryColor>FFFFFF</primaryColor>
+         <secondaryColor>FFFFFF</secondaryColor>
+         <fontPath>./_art/BPreplayBold-unhinted.otf</fontPath>
+         <fontSize>0.035</fontSize>
+         <pos>0.02 0.1</pos>
+         <size>0.96 0.8</size>
+         <alignment>center</alignment>
+         <horizontalMargin>0.01</horizontalMargin>
+         <origin>0 0</origin>
+         <lineSpacing>1.3</lineSpacing>
+         <selectorOffsetY>0</selectorOffsetY>
+         <selectorHeight>0.0675</selectorHeight>
+	<scrollSound>./audio/move.wav</scrollSound>
+    </textlist>
+    <text name="system_name" extra="true">
+         <text> </text>
+         <forceUppercase>1</forceUppercase>
+         <size>0.8 0.025</size>
+         <pos>0.02 0.025</pos>
+         <color>00ffffff</color>
+         <fontPath>/_art/BPreplayBold-unhinted.otf</fontPath>
+         <fontSize>0.04</fontSize>
+         <zIndex>2</zIndex>
+    </text>
+	
+    <text name="md_lbl_genre, md_genre, md_lbl_rating, md_lbl_developer, md_lbl_publisher, md_publisher, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate">
+         <visible>false</visible>
+    </text>
+	
+    <rating name="md_rating">
+         <visible>false</visible>
+    </rating>
+	
+    <image name="md_thumbnail">
+         <visible>false</visible>
+    </image>
+	
+
+    </view>
+<!--
+Background of Ark menü
+-->
+    <view name="menu">
+    <menuBackground name="menubg">
+	<path>./_art/menü.png</path>
+    </menuBackground>
+
+	
+    <menuText name="menutext, menutitle">
+	<fontPath>./_art/BPreplayBold-unhinted.otf</fontPath>
+	<fontSize>.03</fontSize>
+	<color>FFFFFF</color>
+    </menuText>
+	
+	<menuText name="menufooter, menutextsmall">
+	<text>Test</text>
+	<fontPath>./_art/BPreplayBold-unhinted.otf</fontPath>
+	<fontSize>.029</fontSize>		 
+	<color>FFFFFF</color>
+    </menuText>
+	</view>
+  
+  	<view name="screen">
+         <text name="clock">
+	     <color>FFFFFF</color>
+	     <fontPath>./font.ttf</fontPath>
+         <fontSize>0.04</fontSize>
+         <pos>0.48 0.0</pos>
+         <size>0.5 0.058</size>
+    </text>
+    </view>
+<!--
+Color of battery
+-->
+   <view name="screen">
+	<batteryIndicator name="batteryIndicator">
+	<color>FFFFFF</color>
+    </batteryIndicator>
+</view>
+</theme>
